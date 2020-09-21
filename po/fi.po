@@ -2,16 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-07-25 14:55+0300\n"
+"PO-Revision-Date: 2020-09-21 08:01+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "{{title}}"
+msgstr ""
 
 msgid "Copy value to clipboard"
 msgstr "Kopioi {{value}} leikepöydälle"
@@ -21,9 +24,6 @@ msgstr "Kopioitu leikepöydälle"
 
 msgid "value"
 msgstr "arvo"
-
-msgid "{{title}}"
-msgstr ""
 
 msgid "{{paragraph }}"
 msgstr ""
@@ -40,7 +40,9 @@ msgstr ""
 msgid "Close"
 msgstr "Sulje"
 
-msgid "This service is developed and maintained by Digital and Population Data Services Agency"
+msgid ""
+"This service is developed and maintained by Digital and Population Data "
+"Services Agency"
 msgstr "Verkkopalvelun kehittämisestä vastaa Digi- ja väestötietovirasto"
 
 msgid "Information about the service"
@@ -48,6 +50,9 @@ msgstr "Tietoa palvelusta"
 
 msgid "Description of file"
 msgstr "Tietosuojaseloste"
+
+msgid "Accessibility"
+msgstr "Saavutettavuus"
 
 msgid "User support"
 msgstr "Käytön tuki"
@@ -57,6 +62,9 @@ msgstr "Ota yhteyttä"
 
 msgid "Sourcecode is licensed under EUPL-1.2 license."
 msgstr "Lähdekoodi on lisensoitu EUPL-1.2 -lisenssillä."
+
+msgid "Content has been licensed with CC by 4.0 license."
+msgstr "Sisällöt on lisensoitu CC by 4.0 -lisenssillä."
 
 msgid "Contact"
 msgstr "Yhteydenottopyyntö"
@@ -125,9 +133,6 @@ msgstr ""
 
 msgid "Required"
 msgstr "Pakollinen kenttä"
-
-msgid "Content has been licensed with CC by 4.0 license."
-msgstr "Sisällöt on lisensoitu CC by 4.0 -lisenssillä."
 
 #~ msgid "UNFINISHED"
 #~ msgstr "Keskeneräinen"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-02-10 13:17+0200\n"
+"PO-Revision-Date: 2020-09-21 08:02+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv\n"
@@ -52,6 +52,9 @@ msgstr "Information om tjänsten"
 msgid "Description of file"
 msgstr "Dataskyddsbeskrivning"
 
+msgid "Accessibility"
+msgstr "Tillgänglighet"
+
 msgid "User support"
 msgstr "Användarstöd"
 
@@ -89,11 +92,11 @@ msgstr "Skapa koder"
 msgid "MENU"
 msgstr "MENY"
 
+msgid "INVALID"
+msgstr "Felaktig"
+
 msgid "INCOMPLETE"
 msgstr "Halvfärdig"
-
-msgid "DRAFT"
-msgstr "Utkast"
 
 msgid "SUGGESTED"
 msgstr "Förslag"
@@ -107,8 +110,8 @@ msgstr "Ersatt"
 msgid "RETIRED"
 msgstr "Ur bruk"
 
-msgid "INVALID"
-msgstr "Felaktig"
+msgid "DRAFT"
+msgstr "Utkast"
 
 msgid "Edit in progress"
 msgstr "Redigeringen är halvfärdig"

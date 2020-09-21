@@ -28,6 +28,9 @@ import { TranslateService } from '@ngx-translate/core';
             <li>
               <a id="description_of_file_link" [href]="descriptionOfFileLink" target="_blank" rel="noopener noreferrer" translate>Description of file</a>
             </li>
+            <li>
+              <a id="accessibility_link" [href]="accessibilityLink" target="_blank" rel="noopener noreferrer" translate>Accessibility</a>
+            </li>
             <li *ngIf="showUserSupportLink()">
               <a id="user_support_link" href="/ohjeet" translate>User support</a>
             </li>
@@ -76,6 +79,10 @@ export class FooterComponent {
 
   get descriptionOfFileLink() {
     return 'https://wiki.dvv.fi/display/YTIJD/Tietosuojaseloste';
+  }
+
+  get accessibilityLink() {
+    return 'https://wiki.dvv.fi/display/YTIJD/Saavutettavuusseloste';
   }
 
   showUserSupportLink() {

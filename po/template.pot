@@ -42,6 +42,9 @@ msgstr ""
 msgid "Description of file"
 msgstr ""
 
+msgid "Accessibility"
+msgstr ""
+
 msgid "User support"
 msgstr ""
 
@@ -75,10 +78,10 @@ msgstr ""
 msgid "MENU"
 msgstr ""
 
-msgid "INCOMPLETE"
+msgid "INVALID"
 msgstr ""
 
-msgid "DRAFT"
+msgid "INCOMPLETE"
 msgstr ""
 
 msgid "SUGGESTED"
@@ -93,7 +96,7 @@ msgstr ""
 msgid "RETIRED"
 msgstr ""
 
-msgid "INVALID"
+msgid "DRAFT"
 msgstr ""
 
 msgid "Edit in progress"
