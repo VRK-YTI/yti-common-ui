@@ -1,6 +1,4 @@
-import { NgbModalOptions } from '@ng-bootstrap/ng-bootstrap/modal/modal';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap/modal/modal-ref';
+import { NgbModal, NgbModalOptions, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { Injectable } from '@angular/core';
 import { remove } from '../utils/array';
 

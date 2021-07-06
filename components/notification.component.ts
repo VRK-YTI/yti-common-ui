@@ -1,4 +1,5 @@
 import {
+  ApplicationRef,
   ChangeDetectionStrategy, Component, ComponentFactoryResolver, Directive, ElementRef, HostBinding, Injector, Input, NgZone, OnDestroy, OnInit, Renderer2,
   ViewContainerRef
 } from '@angular/core';
@@ -34,7 +35,7 @@ const defaultPlacement = 'auto';
     <div class="box">
       <div class="content">
         <div class="head">
-          
+
           <svg *ngIf="type === 'success'" width="30" height="30" viewBox="0 0 24 19" version="1.1">
             <title>Line</title>
             <desc>Created with Sketch.</desc>
@@ -64,9 +65,9 @@ const defaultPlacement = 'auto';
               </g>
             </g>
           </svg>
-          
+
         </div>
-        
+
         <strong>
           <ng-content></ng-content>
         </strong>
@@ -147,7 +148,8 @@ export class NotificationDirective {
   constructor(private location: ViewContainerRef,
               private renderer: Renderer2,
               private injector: Injector,
-              private componentFactoryResolver: ComponentFactoryResolver) {
+              private componentFactoryResolver: ComponentFactoryResolver,
+              private appRef: ApplicationRef) {
   }
 
   showSuccess(msg: string, durationInMs = defaultDurationInMs, placement: Placement = defaultPlacement) {
@@ -173,7 +175,8 @@ export class NotificationDirective {
       this.injector,
       this.location,
       this.renderer,
-      this.componentFactoryResolver
+      this.componentFactoryResolver,
+      this.appRef
     );
 
     const windowRef = this.popupService.open(msg, {});
