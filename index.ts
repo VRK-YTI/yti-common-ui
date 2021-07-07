@@ -31,6 +31,7 @@ import { ClipboardComponent } from './components/clipboard';
 import { ClipboardModule } from 'ngx-clipboard';
 import { ExpandableTextComponent } from './components/expandable-text.component';
 import { AlertModalComponent, AlertModalService } from './components/alert-modal.component';
+import { HttpClientModule } from '@angular/common/http';
 
 declare var require: any;
 
@@ -79,6 +80,7 @@ const components = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
@@ -91,7 +93,8 @@ const components = [
     LoginModalService,
     ConfirmationModalService,
     AlertModalService,
-    UserService
+    UserService,
+    HttpClientModule
   ]
 })
 export class YtiCommonModule {

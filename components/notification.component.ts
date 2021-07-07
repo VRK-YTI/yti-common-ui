@@ -3,9 +3,9 @@ import {
   ChangeDetectionStrategy, Component, ComponentFactoryResolver, Directive, ElementRef, HostBinding, Injector, Input, NgZone, OnDestroy, OnInit, Renderer2,
   ViewContainerRef
 } from '@angular/core';
-import { Subscription } from 'rxjs';
 import { PopupService } from '@ng-bootstrap/ng-bootstrap/util/popup';
 import { positionElements } from '@ng-bootstrap/ng-bootstrap/util/positioning';
+import { Subscription } from 'rxjs';
 
 export type Placement = 'auto'
                       | 'top'
@@ -123,8 +123,12 @@ export class NotificationWindowComponent implements OnInit, OnDestroy {
   }
 
   refreshPosition() {
+    /*
     const position = positionElements(this.location.nativeElement, this.element.nativeElement, this.placement, true);
-    this.applyPlacement(position);
+    if (position) {
+      this.applyPlacement(position);
+    }
+    */
   }
 
   ngOnDestroy() {
@@ -142,7 +146,7 @@ export class NotificationDirective {
 
   private ngbPopoverWindowId = `app-notification-${nextId++}`;
 
-  private popupService: PopupService<NotificationWindowComponent>|null = null;
+  // private popupService: PopupService<NotificationWindowComponent>|null = null;
   private timeoutHandle: number|null;
 
   constructor(private location: ViewContainerRef,
@@ -161,11 +165,11 @@ export class NotificationDirective {
   }
 
   isOpen() {
-    return this.popupService !== null && this.timeoutHandle !== null;
+    // return this.popupService !== null && this.timeoutHandle !== null;
   }
 
   private show(type: NotificationType, msg: string, durationInMs: number, placement: Placement) {
-
+    /*
     if (this.isOpen()) {
       this.close(true);
     }
@@ -190,10 +194,12 @@ export class NotificationDirective {
     window.document.querySelector('body')!.appendChild(windowRef.location.nativeElement);
 
     this.timeoutHandle = window.setTimeout(() => this.close(false), durationInMs);
+    */
   }
 
   private close(clearTimeout: boolean) {
 
+    /*
     this.renderer.removeAttribute(this.location.element.nativeElement, 'aria-describedby');
     if (this.popupService === null || this.timeoutHandle === null) {
       throw new Error('Cannot close since notification is not shown');
@@ -204,5 +210,6 @@ export class NotificationDirective {
     this.popupService.close();
     this.popupService = null;
     this.timeoutHandle = null;
+    */
   }
 }
