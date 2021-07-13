@@ -155,7 +155,7 @@ export class UserService {
   }
 
   logout() {
-    const currentUrl = window.location.href;
+    const currentUrl = `${window.location.origin}/logout.html`;
     window.location.href = `/Shibboleth.sso/Logout?return=${encodeURIComponent(currentUrl)}`;
   }
 }
