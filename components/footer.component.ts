@@ -52,12 +52,17 @@ import { TranslateService } from '@ngx-translate/core';
         </div>
       </div>
 
+      <div *ngIf="version" class="row">
+        <div class="col-md-12 version">{{version}}</div>
+      </div>
+
     </div>
   `
 })
 export class FooterComponent {
 
   @Input() title: string;
+  @Input() version?: string;
   @Input() showLicenseIcon?: boolean;
   @Output() informationClick = new EventEmitter();
 
